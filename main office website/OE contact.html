@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />    
+  <title>Sanjay Kumar - Contact Us</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .center-text {
+      text-align: center;
+      font-size: 24px;
+    }
+    .upper-links {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .upper-links a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    </style>
+  </head>
+<body>
+    <div class="contact">
+          <h1>Contact Us</h1>
+        <p> Address : Post Office Lane, Jamal Road, Patna 800001</p>
+        <p> Mobile : 7488878760 , 9102004674 </p>
+        <p> onkarexpress123@gmail.com</p>
+          <p>
+            How can we help you?
+          </p>
+          <div class="container">
+          <div class="form">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <input type="hidden" name="access_key" value="8f30d700-c924-40d1-a556-b7d4995ef5e4" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+            <div class="field">
+              <label for="name">Full Name</label><br>
+              <input type="text" name="name" id="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label><br>
+              <input type="email" name="email" id="email" placeholder="your email address" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone Number</label><br>
+              <input type="text" name="phone" id="phone" placeholder="your phone number" required />
+            </div>
+            <div class="field">
+              <label for="message">Your Message</label><br>
+  
+              <textarea rows="10" name="message" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="field">
+              <button type="submit">
+                Send Message
+              </button>
+            </div>
+            <p id="result"></p>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

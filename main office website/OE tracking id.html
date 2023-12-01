@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courier Tracking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .container {
+      text-align: center;
+    }
+    input[type="text"] {
+      padding: 10px;
+      margin: 10px;
+      width: 300px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Courier Tracking</h2>
+    <form id="trackingForm" onsubmit="trackCourier(event)">
+      <input type="text" id="trackingId" placeholder="Enter Tracking ID" required>
+      <br>
+      <input type="submit" value="Track">
+    </form>
+    <div id="trackingResult"></div>
+  </div>
+
+  <script>
+    function trackCourier(event) {
+      event.preventDefault();
+      const trackingId = document.getElementById('trackingId').value;
+      const trackingInfo = `Tracking ID: ${trackingId} - In Transit`;
+
+      document.getElementById('trackingResult').innerText = trackingInfo;
+    }
+  </script>
+</body>
+</html>
